@@ -1,0 +1,54 @@
+Comandos Básicos do Git
+1.	Configurar o Git
+•	git config --global user.name "Seu Nome"
+•	git config --global user.email "seuemail@example.com"
+2.	Iniciar um Repositório
+•	git init: Inicializa um novo repositório Git no diretório atual.
+3.	Clonar um Repositório
+•	git clone URL_DO_REPOSITORIO: Clona um repositório remoto para o diretório local.
+4.	Verificar Status
+•	git status: Mostra o estado das mudanças no repositório.
+5.	Adicionar Arquivos
+•	git add NOME_DO_ARQUIVO ou git add .: Adiciona arquivos ao índice (staging area).
+6.	Commitar Mudanças
+•	git commit -m "Mensagem do commit": Grava as mudanças adicionadas ao repositório.
+7.	Visualizar Histórico de Commits
+•	git log: Exibe o histórico de commits.
+8.	Criar e Mudar de Branches
+•	git branch: Lista as branches no repositório.
+•	git branch NOME_DA_BRANCH: Cria uma nova branch.
+•	git checkout NOME_DA_BRANCH: Muda para a branch especificada.
+•	git checkout -b NOME_DA_BRANCH: Cria e muda para uma nova branch.
+9.	Mesclar Branches
+•	git merge NOME_DA_BRANCH: Mescla a branch especificada na branch atual.
+10.	Enviar Commits para o Repositório Remoto
+•	git push ORIGEM NOME_DA_BRANCH: Envia commits para o repositório remoto.
+11.	Atualizar Repositório Local
+•	git pull ORIGEM NOME_DA_BRANCH: Atualiza o repositório local com as mudanças do repositório remoto.
+Comandos do GitHub
+1.	Criar um Repositório no GitHub
+•	Pode ser feito via interface web no site do GitHub.
+2.	Conectar um Repositório Local ao GitHub
+•	git remote add origin URL_DO_REPOSITORIO_GITHUB: Adiciona um repositório remoto.
+3.	Enviar Alterações para o GitHub
+•	git push -u origin NOME_DA_BRANCH: Envia commits para o GitHub e define a branch upstream.
+4.	Clonar um Repositório do GitHub
+•	git clone URL_DO_REPOSITORIO_GITHUB
+5.	Gerenciar Pull Requests
+•	Pode ser feito via interface web no site do GitHub, onde é possível criar, revisar e mesclar pull requests.
+6.	Gerenciar Issues
+•	Issues são gerenciadas na interface web do GitHub, onde é possível criar, comentar e fechar issues.
+Exemplos Práticos
+1.	Iniciar um novo projeto
+mkdir meu-projeto cd meu-projeto git init 
+2.	Clonar um projeto existente
+git clone https://github.com/usuario/projeto.git cd projeto 
+3.	Adicionar e commitar mudanças
+git add . git commit -m "Minha primeira alteração" 
+4.	Criar uma nova branch e trabalhar nela
+git checkout -b nova-funcionalidade 
+5.	Mesclar mudanças de volta para a branch principal
+git checkout main git merge nova-funcionalidade 
+6.	Enviar mudanças para o GitHub
+git push origin main
+
